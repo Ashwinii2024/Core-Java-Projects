@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 7 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Suite" class="navigator-link">
+              <span class="suite-name border-failed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
+                    <span>C:\Users\harsh\eclipse-workspace\Selenium.Project2\projet2testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">13 methods, 7 failed,   6 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="org.apache.maven.archetypes.maven_archetype_quickstart.TC13_ApplyCouponCode" class="method navigator-link" hash-for-method="ApplyCoupon_Code">ApplyCoupon_Code</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="org.apache.maven.archetypes.maven_archetype_quickstart.TC3_InvalidLogin" class="method navigator-link" hash-for-method="Invalid_Login">Invalid_Login</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="org.apache.maven.archetypes.maven_archetype_quickstart.TC2_Login" class="method navigator-link" hash-for-method="Login_Page">Login_Page</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="org.apache.maven.archetypes.maven_archetype_quickstart.TC5_RoundTrpi_Flights" class="method navigator-link" hash-for-method="RountTrip">RountTrip</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="org.apache.maven.archetypes.maven_archetype_quickstart.TC8_SeatSelection" class="method navigator-link" hash-for-method="Seat_Selection">Seat_Selection</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="org.apache.maven.archetypes.maven_archetype_quickstart.TC09_SelectMultiplePassangers" class="method navigator-link" hash-for-method="SelectMultiplPassangers">SelectMultiplPassangers</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="org.apache.maven.archetypes.maven_archetype_quickstart.TC10_validateallInfo" class="method navigator-link" hash-for-method="VerifyDetails">VerifyDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="org.apache.maven.archetypes.maven_archetype_quickstart.TC11_VerifyTextField" class="method navigator-link" hash-for-method="ContactDetails">ContactDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="org.apache.maven.archetypes.maven_archetype_quickstart.TC6_DifferentClass" class="method navigator-link" hash-for-method="DifferentClass">DifferentClass</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="org.apache.maven.archetypes.maven_archetype_quickstart.TC4_OneWayFlights" class="method navigator-link" hash-for-method="OneWayFlighte">OneWayFlighte</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="org.apache.maven.archetypes.maven_archetype_quickstart.TC15_Payment" class="method navigator-link" hash-for-method="PaymentPage">PaymentPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="org.apache.maven.archetypes.maven_archetype_quickstart.TC1_Registration" class="method navigator-link" hash-for-method="Registration">Registration</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="org.apache.maven.archetypes.maven_archetype_quickstart.TC12_LoginandLogout" class="method navigator-link" hash-for-method="logout">logout</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">org.apache.maven.archetypes.maven_archetype_quickstart.TC2_Login</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Login_Page">
+                  </a> <!-- Login_Page -->
+                  <span class="method-name">Login_Page</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[@id=&quot;nav-link-accountList-nav-line-1&quot;]&quot;}
+  (Session info: chrome=130.0.6723.58)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.23.1&apos;, revision: &apos;656257d8e9&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5f5f9e43bbc4851e906163dcf50f711b, findElement {using=xpath, value=//span[@id=&quot;nav-link-accountList-nav-line-1&quot;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.58, chrome: {chromedriverVersion: 130.0.6723.58 (3a50e012e4c9..., userDataDir: C:\Users\harsh\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59382}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59382/devtoo..., se:cdpVersion: 130.0.6723.58, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5f5f9e43bbc4851e906163dcf50f711b
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.isDisplayed(Unknown Source)
+	at org.apache.maven.archetypes.maven_archetype_quickstart.LoginPage.Submit(LoginPage.java:113)
+	at org.apache.maven.archetypes.maven_archetype_quickstart.TC2_Login.Login_Page(TC2_Login.java:20)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">org.apache.maven.archetypes.maven_archetype_quickstart.TC10_validateallInfo</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyDetails">
+                  </a> <!-- VerifyDetails -->
+                  <span class="method-name">VerifyDetails</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.getClass()&quot; because &quot;exceptionDriver&quot; is null
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at org.apache.maven.archetypes.maven_archetype_quickstart.SearchResultPage.FlightInfo(SearchResultPage.java:35)
+	at org.apache.maven.archetypes.maven_archetype_quickstart.TC10_validateallInfo.VerifyDetails(TC10_validateallInfo.java:35)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">org.apache.maven.archetypes.maven_archetype_quickstart.TC09_SelectMultiplePassangers</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="SelectMultiplPassangers">
+                  </a> <!-- SelectMultiplPassangers -->
+                  <span class="method-name">SelectMultiplPassangers</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.getClass()&quot; because &quot;exceptionDriver&quot; is null
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at org.apache.maven.archetypes.maven_archetype_quickstart.Flight_SeatPage.AddNew_Child(Flight_SeatPage.java:144)
+	at org.apache.maven.archetypes.maven_archetype_quickstart.TC09_SelectMultiplePassangers.SelectMultiplPassangers(TC09_SelectMultiplePassangers.java:40)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">org.apache.maven.archetypes.maven_archetype_quickstart.TC3_InvalidLogin</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Invalid_Login">
+                  </a> <!-- Invalid_Login -->
+                  <span class="method-name">Invalid_Login</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#ap_password&quot;}
+  (Session info: chrome=130.0.6723.58)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.23.1&apos;, revision: &apos;656257d8e9&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2a6b47da8020032f219931810599b4fd, findElement {using=id, value=ap_password}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.58, chrome: {chromedriverVersion: 130.0.6723.58 (3a50e012e4c9..., userDataDir: C:\Users\harsh\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58669}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58669/devtoo..., se:cdpVersion: 130.0.6723.58, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2a6b47da8020032f219931810599b4fd
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.sendKeys(Unknown Source)
+	at org.apache.maven.archetypes.maven_archetype_quickstart.InvalidLogin.password(InvalidLogin.java:65)
+	at org.apache.maven.archetypes.maven_archetype_quickstart.TC3_InvalidLogin.Invalid_Login(TC3_InvalidLogin.java:17)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">org.apache.maven.archetypes.maven_archetype_quickstart.TC13_ApplyCouponCode</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ApplyCoupon_Code">
+                  </a> <!-- ApplyCoupon_Code -->
+                  <span class="method-name">ApplyCoupon_Code</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.getClass()&quot; because &quot;exceptionDriver&quot; is null
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at org.apache.maven.archetypes.maven_archetype_quickstart.SearchResultPage.FlightInfo(SearchResultPage.java:35)
+	at org.apache.maven.archetypes.maven_archetype_quickstart.TC13_ApplyCouponCode.ApplyCoupon_Code(TC13_ApplyCouponCode.java:34)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">org.apache.maven.archetypes.maven_archetype_quickstart.TC8_SeatSelection</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Seat_Selection">
+                  </a> <!-- Seat_Selection -->
+                  <span class="method-name">Seat_Selection</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[@id=&quot;nav-link-accountList-nav-line-1&quot;]&quot;}
+  (Session info: chrome=130.0.6723.58)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.23.1&apos;, revision: &apos;656257d8e9&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7b700c59ce892a711a3f366e97ac0c96, findElement {using=xpath, value=//span[@id=&quot;nav-link-accountList-nav-line-1&quot;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.58, chrome: {chromedriverVersion: 130.0.6723.58 (3a50e012e4c9..., userDataDir: C:\Users\harsh\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59283}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59283/devtoo..., se:cdpVersion: 130.0.6723.58, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7b700c59ce892a711a3f366e97ac0c96
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.isDisplayed(Unknown Source)
+	at org.apache.maven.archetypes.maven_archetype_quickstart.LoginPage.Submit(LoginPage.java:113)
+	at org.apache.maven.archetypes.maven_archetype_quickstart.TC8_SeatSelection.Seat_Selection(TC8_SeatSelection.java:21)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">org.apache.maven.archetypes.maven_archetype_quickstart.TC5_RoundTrpi_Flights</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="RountTrip">
+                  </a> <!-- RountTrip -->
+                  <span class="method-name">RountTrip</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[@id=&quot;nav-link-accountList-nav-line-1&quot;]&quot;}
+  (Session info: chrome=130.0.6723.58)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.23.1&apos;, revision: &apos;656257d8e9&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [567b56ac84a2135184c34b2b87e963cc, findElement {using=xpath, value=//span[@id=&quot;nav-link-accountList-nav-line-1&quot;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.58, chrome: {chromedriverVersion: 130.0.6723.58 (3a50e012e4c9..., userDataDir: C:\Users\harsh\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59157}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59157/devtoo..., se:cdpVersion: 130.0.6723.58, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 567b56ac84a2135184c34b2b87e963cc
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.isDisplayed(Unknown Source)
+	at org.apache.maven.archetypes.maven_archetype_quickstart.LoginPage.Submit(LoginPage.java:113)
+	at org.apache.maven.archetypes.maven_archetype_quickstart.TC5_RoundTrpi_Flights.RountTrip(TC5_RoundTrpi_Flights.java:20)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">org.apache.maven.archetypes.maven_archetype_quickstart.TC15_Payment</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="PaymentPage">
+                  </a> <!-- PaymentPage -->
+                  <span class="method-name">PaymentPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">org.apache.maven.archetypes.maven_archetype_quickstart.TC6_DifferentClass</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="DifferentClass">
+                  </a> <!-- DifferentClass -->
+                  <span class="method-name">DifferentClass</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">org.apache.maven.archetypes.maven_archetype_quickstart.TC1_Registration</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Registration">
+                  </a> <!-- Registration -->
+                  <span class="method-name">Registration</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">org.apache.maven.archetypes.maven_archetype_quickstart.TC11_VerifyTextField</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ContactDetails">
+                  </a> <!-- ContactDetails -->
+                  <span class="method-name">ContactDetails</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">org.apache.maven.archetypes.maven_archetype_quickstart.TC4_OneWayFlights</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="OneWayFlighte">
+                  </a> <!-- OneWayFlighte -->
+                  <span class="method-name">OneWayFlighte</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">org.apache.maven.archetypes.maven_archetype_quickstart.TC12_LoginandLogout</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="logout">
+                  </a> <!-- logout -->
+                  <span class="method-name">logout</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\harsh\eclipse-workspace\Selenium.Project2\projet2testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;org.apache.maven.archetypes.maven_archetype_quickstart.TC09_SelectMultiplePassangers&quot;/&gt;
+      &lt;class name=&quot;org.apache.maven.archetypes.maven_archetype_quickstart.TC10_validateallInfo&quot;/&gt;
+      &lt;class name=&quot;org.apache.maven.archetypes.maven_archetype_quickstart.TC15_Payment&quot;/&gt;
+      &lt;class name=&quot;org.apache.maven.archetypes.maven_archetype_quickstart.TC6_DifferentClass&quot;/&gt;
+      &lt;class name=&quot;org.apache.maven.archetypes.maven_archetype_quickstart.TC13_ApplyCouponCode&quot;/&gt;
+      &lt;class name=&quot;org.apache.maven.archetypes.maven_archetype_quickstart.TC3_InvalidLogin&quot;/&gt;
+      &lt;class name=&quot;org.apache.maven.archetypes.maven_archetype_quickstart.TC11_VerifyTextField&quot;/&gt;
+      &lt;class name=&quot;org.apache.maven.archetypes.maven_archetype_quickstart.TC12_LoginandLogout&quot;/&gt;
+      &lt;class name=&quot;org.apache.maven.archetypes.maven_archetype_quickstart.TC5_RoundTrpi_Flights&quot;/&gt;
+      &lt;class name=&quot;org.apache.maven.archetypes.maven_archetype_quickstart.TC1_Registration&quot;/&gt;
+      &lt;class name=&quot;org.apache.maven.archetypes.maven_archetype_quickstart.TC8_SeatSelection&quot;/&gt;
+      &lt;class name=&quot;org.apache.maven.archetypes.maven_archetype_quickstart.TC2_Login&quot;/&gt;
+      &lt;class name=&quot;org.apache.maven.archetypes.maven_archetype_quickstart.TC4_OneWayFlights&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test (13 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(13);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'SelectMultiplPassangers')
+data.setCell(0, 2, 'org.apache.maven.archetypes.maven_archetype_quickstart.TC09_SelectMultiplePassangers')
+data.setCell(0, 3, 42496);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'PaymentPage')
+data.setCell(1, 2, 'org.apache.maven.archetypes.maven_archetype_quickstart.TC15_Payment')
+data.setCell(1, 3, 37849);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'VerifyDetails')
+data.setCell(2, 2, 'org.apache.maven.archetypes.maven_archetype_quickstart.TC10_validateallInfo')
+data.setCell(2, 3, 33732);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'logout')
+data.setCell(3, 2, 'org.apache.maven.archetypes.maven_archetype_quickstart.TC12_LoginandLogout')
+data.setCell(3, 3, 32245);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'ApplyCoupon_Code')
+data.setCell(4, 2, 'org.apache.maven.archetypes.maven_archetype_quickstart.TC13_ApplyCouponCode')
+data.setCell(4, 3, 31099);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'ContactDetails')
+data.setCell(5, 2, 'org.apache.maven.archetypes.maven_archetype_quickstart.TC11_VerifyTextField')
+data.setCell(5, 3, 25304);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'OneWayFlighte')
+data.setCell(6, 2, 'org.apache.maven.archetypes.maven_archetype_quickstart.TC4_OneWayFlights')
+data.setCell(6, 3, 24358);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'DifferentClass')
+data.setCell(7, 2, 'org.apache.maven.archetypes.maven_archetype_quickstart.TC6_DifferentClass')
+data.setCell(7, 3, 24065);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'Seat_Selection')
+data.setCell(8, 2, 'org.apache.maven.archetypes.maven_archetype_quickstart.TC8_SeatSelection')
+data.setCell(8, 3, 10830);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'Login_Page')
+data.setCell(9, 2, 'org.apache.maven.archetypes.maven_archetype_quickstart.TC2_Login')
+data.setCell(9, 3, 10661);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'RountTrip')
+data.setCell(10, 2, 'org.apache.maven.archetypes.maven_archetype_quickstart.TC5_RoundTrpi_Flights')
+data.setCell(10, 3, 8947);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'Registration')
+data.setCell(11, 2, 'org.apache.maven.archetypes.maven_archetype_quickstart.TC1_Registration')
+data.setCell(11, 3, 5698);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'Invalid_Login')
+data.setCell(12, 2, 'org.apache.maven.archetypes.maven_archetype_quickstart.TC3_InvalidLogin')
+data.setCell(12, 3, 4746);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 4 minutes</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">Registration</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">My test case is pass</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">ContactDetails</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">After typing email continue btn is working</span>
+                <span class="reporter-method-output">My test case is pass</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">DifferentClass</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">After typing email continue btn is working</span>
+                <span class="reporter-method-output">My test case is pass</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">PaymentPage</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">After typing email continue btn is working</span>
+                <span class="reporter-method-output">My test case is pass</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">OneWayFlighte</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">After typing email continue btn is working</span>
+                <span class="reporter-method-output">My test case is pass</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">logout</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">After typing email continue btn is working</span>
+                <span class="reporter-method-output">My test case is pass</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">Login_Page</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">After typing email continue btn is working</span>
+                <span class="reporter-method-output">My TestCase is fail</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">Invalid_Login</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Erroe message is displayed</span>
+                <span class="reporter-method-output">My TestCase is fail</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">SelectMultiplPassangers</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">After typing email continue btn is working</span>
+                <span class="reporter-method-output">My TestCase is fail</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">VerifyDetails</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">After typing email continue btn is working</span>
+                <span class="reporter-method-output">My TestCase is fail</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">RountTrip</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">After typing email continue btn is working</span>
+                <span class="reporter-method-output">My TestCase is fail</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">Seat_Selection</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">After typing email continue btn is working</span>
+                <span class="reporter-method-output">My TestCase is fail</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">ApplyCoupon_Code</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">After typing email continue btn is working</span>
+                <span class="reporter-method-output">My TestCase is fail</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.apache.maven.archetypes.maven_archetype_quickstart.TC09_SelectMultiplePassangers</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchAirlLine</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">SelectMultiplPassangers</span>
+                <span class="method-start">10163 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Quit</span>
+                <span class="method-start">52841 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.apache.maven.archetypes.maven_archetype_quickstart.TC10_validateallInfo</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchAirlLine</span>
+                <span class="method-start">52847 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">VerifyDetails</span>
+                <span class="method-start">57966 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Quit</span>
+                <span class="method-start">91880 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.apache.maven.archetypes.maven_archetype_quickstart.TC15_Payment</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchAirlLine</span>
+                <span class="method-start">91882 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">PaymentPage</span>
+                <span class="method-start">98252 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Quit</span>
+                <span class="method-start">136247 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.apache.maven.archetypes.maven_archetype_quickstart.TC6_DifferentClass</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchAirlLine</span>
+                <span class="method-start">136249 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">DifferentClass</span>
+                <span class="method-start">144224 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Quit</span>
+                <span class="method-start">168675 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.apache.maven.archetypes.maven_archetype_quickstart.TC13_ApplyCouponCode</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchAirlLine</span>
+                <span class="method-start">168679 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">ApplyCoupon_Code</span>
+                <span class="method-start">178900 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Quit</span>
+                <span class="method-start">210155 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.apache.maven.archetypes.maven_archetype_quickstart.TC3_InvalidLogin</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchAirlLine</span>
+                <span class="method-start">210157 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Invalid_Login</span>
+                <span class="method-start">220889 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Quit</span>
+                <span class="method-start">225779 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.apache.maven.archetypes.maven_archetype_quickstart.TC11_VerifyTextField</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchAirlLine</span>
+                <span class="method-start">225780 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">ContactDetails</span>
+                <span class="method-start">234099 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Quit</span>
+                <span class="method-start">259574 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.apache.maven.archetypes.maven_archetype_quickstart.TC12_LoginandLogout</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchAirlLine</span>
+                <span class="method-start">259576 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">logout</span>
+                <span class="method-start">270716 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Quit</span>
+                <span class="method-start">303241 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.apache.maven.archetypes.maven_archetype_quickstart.TC5_RoundTrpi_Flights</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchAirlLine</span>
+                <span class="method-start">303249 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">RountTrip</span>
+                <span class="method-start">311329 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Quit</span>
+                <span class="method-start">320457 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.apache.maven.archetypes.maven_archetype_quickstart.TC1_Registration</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchAirlLine</span>
+                <span class="method-start">320458 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">Registration</span>
+                <span class="method-start">326829 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Quit</span>
+                <span class="method-start">333784 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.apache.maven.archetypes.maven_archetype_quickstart.TC8_SeatSelection</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchAirlLine</span>
+                <span class="method-start">333785 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Seat_Selection</span>
+                <span class="method-start">344767 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Quit</span>
+                <span class="method-start">355749 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.apache.maven.archetypes.maven_archetype_quickstart.TC2_Login</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchAirlLine</span>
+                <span class="method-start">355750 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Login_Page</span>
+                <span class="method-start">363678 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Quit</span>
+                <span class="method-start">374518 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.apache.maven.archetypes.maven_archetype_quickstart.TC4_OneWayFlights</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchAirlLine</span>
+                <span class="method-start">374520 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">OneWayFlighte</span>
+                <span class="method-start">387869 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Quit</span>
+                <span class="method-start">412467 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
